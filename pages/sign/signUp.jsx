@@ -1,13 +1,12 @@
-import Router from 'next/router';
-import { MainLayout } from './layout/MainLayout';
+import {useRouter} from 'next/router';
+import { MainLayout } from '../layout/MainLayout';
 
-export default function About() {
+export default function SignUp() {
+  const router = useRouter();
   return (
     <MainLayout>
-      <div>
-        <button onClick={() => Router.push("/")}>Go back to home</button>
-        <p>About page</p>
-      </div>
+      <button onClick={() => router.push("/")}>Go back to home</button>
+      <p>Sign Up</p>
       <style jsx>
       {`
         button {
@@ -25,4 +24,4 @@ export default function About() {
     </style>
     </MainLayout>
   )
-};
+}

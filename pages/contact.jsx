@@ -1,12 +1,12 @@
 import Router from 'next/router';
 import { MainLayout } from './layout/MainLayout';
 
-export default function About() {
+export default function Contact() {
   return (
     <MainLayout>
       <div>
         <button onClick={() => Router.push("/")}>Go back to home</button>
-        <p>About page</p>
+        <p>Contact page</p>
       </div>
       <style jsx>
       {`
