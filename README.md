@@ -1,3 +1,3 @@
 Learning project on next.js...
 
-[DEMO]()
+[DEMO]('https://andrii1996.github.io/next/')
